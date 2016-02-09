@@ -16,4 +16,5 @@ Formation Angular
 * cucumber.io (behavior driven dev)
 * AFUP PHP (dont 2014 les tests en php)
 * Selenium IDE *(firefox)* ou Selenium Remote Control
-* boogie board
+* boogie board *(rien à voir, palette graphique)*
+* ditto *(clipboard manager)*
