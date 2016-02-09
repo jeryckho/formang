@@ -19,3 +19,5 @@ Formation Angular
 * boogie board *(rien à voir, palette graphique)*
 * ditto *(clipboard manager)*
 * it-ebooks
+* target="\_self" *(pour route, éviter l'interception des ahref)*
+* turnkey

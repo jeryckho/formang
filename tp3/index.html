@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="exampleApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="node_modules/angular/angular.js"></script>
+  <script>
+    var app = angular.module("exampleApp", []);
+    app.controller('Ctrl1', function($scope, $rootScope) {
+      $scope.send = function() {
+        $rootScope.$broadcast('sentVal', {
+          'Val': $scope.val
+        });
+      }
+    });
+    app.controller('Ctrl2', function($scope, $rootScope) {
+      $scope.result = "Resultat : ";
+      $rootScope.$on('sentVal', function(ev, args) {
+        $scope.result += " " + args.Val;
+      })
+    });
+  </script>
+</head>
+
+<body>
+  <div ng-controller="Ctrl1">
+    <input type="text" ng-model="val">
+    <button class="btn btn-primary" ng-click="send()">Send</button>
+  </div>
+  <div ng-controller="Ctrl2">
+    <strong>{{result}}</strong>
+  </div>
+</body>
+
+</html>
