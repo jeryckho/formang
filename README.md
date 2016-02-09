@@ -18,3 +18,4 @@ Formation Angular
 * Selenium IDE *(firefox)* ou Selenium Remote Control
 * boogie board *(rien à voir, palette graphique)*
 * ditto *(clipboard manager)*
+* it-ebooks
