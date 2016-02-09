@@ -13,3 +13,7 @@ Formation Angular
 * batarang
 * Good practices *(john papa)*
 * *v1.5* new Routeur
+* cucumber.io (behavior driven dev)
+* AFUP PHP (dont 2014 les tests en php)
+* Selenium IDE *(firefox)* ou Selenium Remote Control
+* boogie board
