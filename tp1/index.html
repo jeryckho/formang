@@ -28,9 +28,11 @@
         return angular.isNumber(input) ? dayNames[input] : input;
       }
     });
-    app.service("Days", function(){
-      this.day = new Date().getDay();
-      this.tomorrow = (new Date().getDay() + 1) % 7;
+    var now = new Date();
+    app.value('nowVal',now);
+    app.service("Days", function(nowVal){
+      this.day = nowVal.getDay();
+      this.tomorrow = (nowVal.getDay() + 1) % 7;
     })
   </script>
 </head>
