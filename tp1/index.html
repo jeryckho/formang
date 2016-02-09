@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="exampleApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="node_modules/angular/angular.js"></script>
+  <script>
+    var app = angular.module("exampleApp", []);
+    app.controller('dayCtrl', function($scope) {
+      var dayName = ['Dimanche', 'Lundi', 'Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+      $scope.day = dayName[ new Date().getDay() ];
+    });
+    app.controller('tomorrowCtrl', function($scope) {
+      var dayName = ['Dimanche', 'Lundi', 'Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+      $scope.tomorrow = dayName[ (new Date().getDay() +1) % 5 ];
+    });
+  </script>
+</head>
+
+<body>
+  <div class="panel">
+    <div class="panel-body">
+      <h4 ng-controller="dayCtrl">Jour : {{ day || 'inconnu'}}</h4>
+      <h4 ng-controller="tomorrowCtrl">Demain : {{ tomorrow || 'inconnu'}}</h4>
+    </div>
+  </div>
+</body>
+</html>
