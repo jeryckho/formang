@@ -8,7 +8,7 @@ Formation Angular
 * mean.io
 * goratchet
 * batarang *(extension pour Chrome)*
-* deployd
+* deployd.com *(--> creation appli de base avec mongo)*
 * atom atom-beautify emmet
 * batarang
 * Good practices *(john papa)*
@@ -21,3 +21,5 @@ Formation Angular
 * it-ebooks
 * target="\_self" *(pour route, éviter l'interception des ahref)*
 * turnkey
+* protactor *(fonctionnel, bout en bout)*
+* CasperJS *(headless browser)* + Resurrection *(extension chrome pour Casper)*
