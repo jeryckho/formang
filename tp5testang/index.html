@@ -11,7 +11,7 @@
 <body>
   <div class="panel">
     <div class="panel-body" ng-controller="monCtrl" >
-      action : <input type="text" ng-model='todo'> <button ng-click='addTodo(todo)'>Send</button>
+      action : <input type="text" ng-model='todo'> <button id="send" ng-click='addTodo(todo)'>Send</button>
       <ul>
         <li ng-repeat="t in todos"> {{t}}</li>
       </ul>

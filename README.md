@@ -23,3 +23,5 @@ Formation Angular
 * turnkey
 * protactor *(fonctionnel, bout en bout)*
 * CasperJS *(headless browser)* + Resurrection *(extension chrome pour Casper)*
+* APress Pro Angular JS
+* nightwatchjs.org
