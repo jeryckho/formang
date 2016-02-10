@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="exampleApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="node_modules/angular/angular.js"></script>
+  <script>
+    var app = angular.module("exampleApp", []);
+    app.controller('promCtrl',function($scope,$q){
+
+      $scope.res = '...';
+
+      var d1 = $q.defer();
+      var d2 = $q.defer();
+
+      $q.all( [ d1.promise, d2.promise ] ).then(function(){
+        $scope.res = 'Ok';
+      });
+
+      $scope.clkBtn1 = function() {
+        d1.resolve();
+      };
+      $scope.clkBtn2 = function() {
+        d2.resolve();
+      };
+    });
+  </script>
+</head>
+
+<body>
+  <div class="panel">
+    <div class="panel-body" ng-controller="promCtrl">
+<button type="button" name="button" ng-click="clkBtn1()">Btn 1</button>
+<button type="button" name="button" ng-click="clkBtn2()">Btn 2</button><br>
+{{res}}
+    </div>
+  </div>
+</body>
+
+</html>
