@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="exampleApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<script src="node_modules/angular/angular.js"></script>
+		<script>
+			var app = angular.module("exampleApp", []);
+			app.controller('qCtrl',function($scope,$http,$q){
+
+				$scope.res = 'Start ';
+				$scope.datas = {};
+
+				$scope.clkBtn1 = function() {
+
+					$http.get('phones/phones.json')
+					.then(function(response){
+						var phones = response.data;
+						var queries = [];
+						angular.forEach(phones,function(phone) {
+							queries.push(
+								$http.get('phones/'+phone.id+'.json')
+								.then(function(resp){
+									var def = $q.defer();
+									$scope.datas[resp.data.id] = resp.data.name;
+									$scope.res += '.';
+									$q.resolve();
+									return $q.promise;
+								})
+							);
+						});
+						return $q.all(queries);
+					})
+					.then(
+						function(){
+							$scope.res += 'G';
+						},function(){
+							$scope.res += 'B';
+						}
+					);
+				};
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="panel" ng-controller="qCtrl">
+			<div class="panel-body">
+				<button type="button" name="button" ng-click="clkBtn1()">Btn 1</button>
+			</div>
+			<div class="panel-body">{{res}}</div>
+			<!--<div class="panel-body">{{datas|json}}</div>-->
+			<div class="panel-body">
+				<ul>
+					<li ng-repeat="(key, value) in datas">{{key}} : {{value}}</li>
+				</ul>
+			</div>
+		</div>	
+	</body>
+
+</html>
