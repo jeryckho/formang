@@ -9,7 +9,7 @@ Formation Angular
 * goratchet
 * batarang *(extension pour Chrome)*
 * deployd.com *(--> creation appli de base avec mongo)*
-* atom atom-beautify emmet
+* atom atom-beautify emmet git-plus
 * batarang
 * Good practices *(john papa)*
 * *v1.5* new Routeur
