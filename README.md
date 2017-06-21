@@ -19,7 +19,7 @@ Formation Angular
 * boogie board *(rien à voir, palette graphique)*
 * ditto *(clipboard manager)*
 * it-ebooks
-* href="" ou href tout court *(pour route, éviter l'interception des ahref)*
+* href="" ou href tout court ou target="_self" *(pour route, éviter l'interception des ahref)*
 * turnkey
 * protactor *(fonctionnel, bout en bout)*
 * CasperJS *(headless browser)* + Resurrection *(extension chrome pour Casper)*
