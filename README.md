@@ -26,3 +26,8 @@ Formation Angular
 * APress Pro Angular JS
 * nightwatchjs.org
 * npm tsc *(pour TypeScript Compiler)*
+
+# formMongo
+* splunk
+* compass
+* CouchBase
