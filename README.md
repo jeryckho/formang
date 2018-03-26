@@ -31,3 +31,4 @@ Formation Angular
 * splunk
 * compass
 * CouchBase
+* interface REST (mongod.exe --rest / port +1000)
