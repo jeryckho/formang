@@ -32,3 +32,4 @@ Formation Angular
 * compass
 * CouchBase
 * interface REST (mongod.exe --rest / port +1000)
+* HBASE / CASSANDRA
