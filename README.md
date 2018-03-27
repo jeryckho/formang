@@ -35,4 +35,5 @@ Formation Angular
 * HBASE / CASSANDRA
 * Théorème CAP
 * GUI / REST / Shell / APIs
-* Replication = HA / Durabilty | Repartition (Sharding) = Load Balancing
+* Replication = HA / Durabilty
+* Repartition (Sharding) = Load Balancing
