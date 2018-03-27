@@ -37,3 +37,4 @@ Formation Angular
 * GUI / REST / Shell / APIs
 * Replication = HA / Durabilty
 * Repartition (Sharding) = Load Balancing
+* C2Sphere GeoData
