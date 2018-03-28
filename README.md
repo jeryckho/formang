@@ -38,3 +38,4 @@ Formation Angular
 * Replication = HA / Durabilty
 * Repartition (Sharding) = Load Balancing
 * C2Sphere GeoData
+* créer les index en amont (de préférence)
