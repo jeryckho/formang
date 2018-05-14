@@ -59,3 +59,6 @@ Formation Angular
 * (ex async await slide 163 sur bioub)
 * node debug/inspect
 * node --inspect-brk file.js <=> chrome://inspect
+* npm i -g npm pour mettre à jour son npm
+* npm outdated
+* date-fns ald moment (pour cherry-picking)
