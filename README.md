@@ -64,3 +64,4 @@ Formation Angular
 * date-fns ald moment (pour cherry-picking)
 * verdaccio (npm en local)
 * github.com/trending (week / javascript)
+* husky (package)
