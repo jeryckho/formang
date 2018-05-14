@@ -52,3 +52,8 @@ Formation Angular
 * loupe js
 * jake archibald in the loop
 * mocha / jest
+* definedProperties
+* lodash
+* Object.assign pour shallow copy
+* fs-extra ald fs
+* (ex async await slide 163 sur bioub)
