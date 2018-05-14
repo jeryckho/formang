@@ -57,3 +57,5 @@ Formation Angular
 * Object.assign pour shallow copy
 * fs-extra ald fs
 * (ex async await slide 163 sur bioub)
+* node debug/inspect
+* node --inspect-brk file.js <=> chrome://inspect
