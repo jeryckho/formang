@@ -62,3 +62,5 @@ Formation Angular
 * npm i -g npm pour mettre à jour son npm
 * npm outdated
 * date-fns ald moment (pour cherry-picking)
+* verdaccio (npm en local)
+* github.com/trending (week / javascript)
