@@ -39,3 +39,16 @@ Formation Angular
 * Repartition (Sharding) = Load Balancing
 * C2Sphere GeoData
 * créer les index en amont (de préférence)
+
+# formNode
+* loggueur winston (équipe NRCOM)
+* https://github.com/bioub/Formation_Node.js_2018_05
+* .editorconfig pour "standardiser" la gestion des IDE
+* doc mozilla pour JS (quasi-officielle)
+* const pour éviter re-déclaration
+* performance dans chrome
+* anime js
+* apache bench
+* loupe js
+* jake archibald in the loop
+* mocha / jest
