@@ -68,4 +68,5 @@ Formation Angular
 * lint-staged / import-sort
 * https://www.npmjs.com/browse/depended
 * loopback / adminOnRest
-  
+* cucumber js (BDD)
+* sinon
