@@ -66,3 +66,4 @@ Formation Angular
 * github.com/trending (week / javascript)
 * husky (package)
 * lint-staged / import-sort
+* https://www.npmjs.com/browse/depended
