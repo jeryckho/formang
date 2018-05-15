@@ -65,3 +65,4 @@ Formation Angular
 * verdaccio (npm en local)
 * github.com/trending (week / javascript)
 * husky (package)
+* lint-staged / import-sort
