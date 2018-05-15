@@ -67,3 +67,5 @@ Formation Angular
 * husky (package)
 * lint-staged / import-sort
 * https://www.npmjs.com/browse/depended
+* loopback / adminOnRest
+  
