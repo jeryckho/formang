@@ -8,8 +8,8 @@ const serv = http.createServer(app);
 
 serv.on('error', (err) => {
 	console.log(err);
-})
+});
 
 serv.listen(8080, () => {
-	console.log('server started')
-})
+	console.log('server started');
+});
